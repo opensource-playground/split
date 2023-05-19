@@ -2,11 +2,11 @@
   "name": "splits",
   "version": "1.0.1",
   "description": "A typesage implementation of `.split()`",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "module": "dist/src/index.mjs",
+  "types": "dist/src/index.d.ts",
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
+    "build": "tsup ./src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
     "release": "npm run build && npx changeset publish"
   },
