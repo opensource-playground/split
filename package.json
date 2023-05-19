@@ -1,7 +1,7 @@
 {
   "name": "splits",
-  "version": "2.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "A typesage implementation of `.split()`",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -19,5 +19,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
+  }
 }
