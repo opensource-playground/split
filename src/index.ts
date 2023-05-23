@@ -1,6 +1,5 @@
-import './types'
+import { Splitted } from "./types";
 
-String.prototype.splits = function <S extends string, D extends string>(delimiter: D): Splitted<S, D> {
-  const str = String(this)
+export function split<S extends string, D extends string>(str: S, delimiter: D): Splitted<S, D> {
   return (str.split(delimiter)) as Splitted<S, typeof delimiter>
-};
+}
